@@ -1,0 +1,123 @@
+:root {
+    --background: #cfe1f3;
+    --timer: #ac0017;
+    --popup: #00e9c273;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game {
+    background-color: var(--background);
+    width: 900px;
+    height: 600px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px 20px 0px 20px; */
+    padding: 20px;
+}
+
+.timer, .scoreBrd {
+    font-size: 24px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 700;
+}
+
+.timer {
+    color: var(--timer);
+}
+
+.startBtn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.startBtn:hover {
+    transform: scale(1.2);
+    background-color: rgb(0, 95, 32);
+    color: white;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+    font-family: 'Fira Mono', monospace;
+}
+
+.levelWrap {
+    opacity: 0.3;
+}
+
+.field {
+    width: 100%;
+    height: 530px;
+    position: relative;
+    background: url(img/toppng.com-kim-jong-un-smiling-466x400.png) center/cover;
+}
+
+.rules {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 36px;
+    color: red;
+    text-align: right;
+    padding: 40px 10px 0px 0px;
+    margin: 0px;
+    line-height: 36px;
+}
+
+.kim {
+    position: absolute;
+    cursor: pointer;
+}
+
+.kim:hover {
+    transform: scale(1.2);
+}
+
+.popup {
+    position: absolute;
+    top: 300px;
+    width: 400px;
+    height: 100px;
+    background-color: var(--popup);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    visibility: hidden;
+}
+
+.popup_next_stage_btn {
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popup_next_stage_btn:hover {
+    background-color: yellowgreen;
+}
+
+.popup_next_stage_btn > span {
+    font-size: 48px;
+}
+
+.popup_text {
+    margin-left: 30px;
+}

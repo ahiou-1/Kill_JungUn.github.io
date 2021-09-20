@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>own game</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Fira+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <section class="game">
+        <section class="header">
+            <span class="timer">0:0</span>
+            <button class="startBtn">
+                Play KILL
+                <span class="material-icons">dangerous</span>
+                JUNGUN
+            </button>
+            <section class="status">    
+                <section class="levelWrap">
+                    <span class="level_text">Level: </span>
+                    <span class="level"></span>
+                </section>
+                <span class="scoreBrd"></span>
+            </section>
+        </section>
+
+        <section class="field">
+            <p class="rules">1. 10초 안에 모든 정은이를 클릭해라!<br><br>
+            2. 각 스테이지를 클리어할 때 마다<br>정은이는 3명씩 늘어난다!</p>
+        </section> 
+    </section>
+
+    <section class="popup">
+        <span class="popup_text">Good job! To the next stage!</span>
+        <button class="popup_next_stage_btn">
+            <span class="material-icons">trending_flat</span>
+        </button>
+    </section>
+</body>
+</html>
