@@ -67,7 +67,7 @@ function startNextStage() {
 }
 
 function playBackground() {
-    field.style.background = 'url(img/inside-north-korean-home-535x325.jpg) center/cover'
+    field.style.background = 'url(img/household.jpeg) center/cover'
 }
 
 function lobbyBackground() {
